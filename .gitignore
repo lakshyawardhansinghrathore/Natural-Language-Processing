@@ -1,0 +1,104 @@
+# ==========================================
+# 1. Virtual Environments
+# ==========================================
+venv/
+env/
+.env/
+.venv/
+conda/
+miniconda/
+anacond3/
+
+# ==========================================
+# 2. Python & IDE Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.vscode/
+.idea/
+
+# ==========================================
+# 3. Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# 4. Data (Raw, Processed, Corpora)
+# ==========================================
+# Ignore all data files to prevent uploading massive datasets
+*.csv
+*.tsv
+*.dat
+*.json
+*.jsonl
+*.xml
+*.parquet
+*.arrow
+*.db
+*.sqlite
+
+# Specifically ignore common data directories entirely
+data/
+dataset/
+datasets/
+corpus/
+
+# ==========================================
+# 5. Machine Learning Models & Weights
+# ==========================================
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# TensorFlow / Keras
+*.h5
+*.hdf5
+*.pb
+*.keras
+saved_model/
+
+# Scikit-learn / General Python Objects
+*.pkl
+*.pickle
+*.joblib
+
+# NLP / Hugging Face specific
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+
+# Ignore standard model directories
+models/
+weights/
+checkpoints/
+
+# ==========================================
+# 6. NLP Specific Artifacts
+# ==========================================
+# Word embeddings, tokenizers, and vocabularies
+*.vec
+vocab.txt
+tokenizer.json
+merges.txt
+
+# ==========================================
+# 7. Logs and Experiment Tracking
+# ==========================================
+# TensorBoard, Weights & Biases, MLflow, etc.
+logs/
+tb_logs/
+runs/
+wandb/
+mlruns/
+*.log
+
+# ==========================================
+# 8. OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
